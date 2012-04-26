@@ -1,4 +1,4 @@
-﻿% Klasa dokumentów do składu prac dyplomowych na Wydziale Matematyki
+% Klasa dokumentów do składu prac dyplomowych na Wydziale Matematyki
 % i Informatyki UWM.
 %
 % Na podstawie:
