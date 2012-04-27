@@ -14,7 +14,7 @@
 
 % szerokość tekstu
 \textwidth\paperwidth
-\advance\textwidth -55mm
+\advance\textwidth-55mm
 
 % lewy margines
 \oddsidemargin-1in %reset 
@@ -40,12 +40,18 @@
 \newcommand{\@rodzajpracy}{licencjacka/magisterska/inzynierska}
 \newcommand{\@katedra}{nazwa katedry}
 \newcommand{\@opiekun}{opiekun pracy}
+\newcommand{\@tytulang}{tytul angielski}
+\newcommand{\@abstracteng}{streszczenie po angielsku}
 
 \newcommand{\wydzial}[1]{\renewcommand{\@wydzial}{#1}}
 \newcommand{\kierunek}[1]{\renewcommand{\@kierunek}{#1}}
 \newcommand{\rodzajpracy}[1]{\renewcommand{\@rodzajpracy}{#1}}
 \newcommand{\katedra}[1]{\renewcommand{\@katedra}{#1}}
 \newcommand{\opiekun}[1]{\renewcommand{\@opiekun}{#1}}
+\newcommand{\tytulang}[1]{\renewcommand{\@tytulang}{#1}}
+\newcommand{\abstracteng}[1]{\renewcommand{\@abstracteng}{
+    \setlength{\parindent}{0pt}#1}
+}
 
 % strona tytułowa
 \renewcommand{\maketitle}{%
@@ -77,4 +83,36 @@
     \end{center}\end{titlepage}
     
     \cleardoublepage
-}
+}%
+
+% streszczenie + tytul ang. + streszczenie ang.
+\renewenvironment{abstract}{%
+    \titlepage
+    \null\nobreak\vfil
+
+    \begin{center}
+        \bfseries\large \abstractname
+    \end{center}
+}%
+{%
+    \vspace*{26pt}
+    
+    \begin{center}
+        \bfseries\large Tytu{\l} pracy w j{\k{e}}zyku angielskim
+    \end{center}
+    
+    \@tytulang
+    
+    \vspace*{26pt}
+    
+    \begin{center}
+        \bfseries\large Abstract
+    \end{center}
+
+    \@abstracteng
+    
+    \nobreak\vfil\null
+    \endtitlepage
+    
+    \cleardoublepage
+}%
