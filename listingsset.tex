@@ -1,42 +1,43 @@
-% konfifuracja wyglądu listingów. 
-% źródło: http://stackoverflow.com/questions/741985/latex-source-code-listing-like-in-professional-books
-% więcej informacji: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf
+%% konfifuracja wyglądu listingów
+%% źródło: http://stackoverflow.com/questions/741985/latex-source-code-listing-like-in-professional-books
+%% więcej informacji: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf
 
 \usepackage{color}
-
-% wygląd treści listingów
 \usepackage{listings}
+
+%% wygląd treści listingów
 \lstset{
-    basicstyle=\footnotesize,           %\ttfamily, % Standardschrift
-    %numbers=left,                      % Ort der Zeilennummern
-    numberstyle=\tiny,                  % Stil der Zeilennummern
-    %stepnumber=2,                      % Abstand zwischen den Zeilennummern
-    numbersep=5pt,                      % Abstand der Nummern zum Text
-    tabsize=2,                          % Groesse von Tabs
+    basicstyle=\footnotesize,           %\ttfamily, % domyślna czcionka
+    %% numbers=left,                    % strona po której zostaną wstawione numery wierszy
+    numberstyle=\tiny,                  % styl numeracji wiersze
+    %% stepnumber=1,                    % krok numeracji wierszy
+    numbersep=5pt,                      % odstęp numeracji wierszy od tekstu
+    tabsize=2,                          % rozmiar tabulacji
     extendedchars=true,                 %
-    breaklines=true,                    % Zeilen werden Umgebrochen
+    breaklines=true,                    % czy łamać wiersze
     keywordstyle=\color{black},
-    frame=b,         
-    keywordstyle=[1]\textbf,           % Stil der Keywords
-    %keywordstyle=[2]\textbf,           %
-    %keywordstyle=[3]\textbf,           %
-    %keywordstyle=[4]\textbf,   \sqrt{\sqrt{}} %
-    %stringstyle=\color{white}\ttfamily % Farbe der String
+    frame=b,
+    keywordstyle=[1]\textbf,                    % styl słów kluczowych
+    %% keywordstyle=[2]\textbf,                 %
+    %% keywordstyle=[3]\textbf,                 %
+    %% keywordstyle=[4]\textbf,                 %
+    %% stringstyle=\color{white}\ttfamily       % styl stringów
     stringstyle=\ttfamily,
-    showspaces=false,                   % Leerzeichen anzeigen ?
-    showtabs=false,                     % Tabs anzeigen ?
+    showspaces=false,                           % czy pokazywać spacje
+    showtabs=false,                             % czt pokazywać tabulatory
     xleftmargin=17pt,
     framexleftmargin=17pt,
     framexrightmargin=5pt,
     framexbottommargin=4pt,
-    %backgroundcolor=\color{lightgray},
-    showstringspaces=false              % Leerzeichen in Strings anzeigen ?        
+    %% backgroundcolor=\color{lightgray},
+    showstringspaces=false                      % czy pokazywać spacje w stringach
 }
 
-% wygląd nagłowków listingów
+%% wygląd nagłowków listingów
 \usepackage{caption}
 \DeclareCaptionFont{white}{\color{white}}
 \DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
 \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white,singlelinecheck=false,margin=0pt,font={bf,sf,footnotesize}}
 
+%% polska nazwa nagłówka
 \renewcommand{\lstlistlistingname}{Spis listingów}

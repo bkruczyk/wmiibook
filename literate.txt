@@ -1,4 +1,6 @@
-﻿literate={ą}{{\k{a}}}1
+﻿%% uzyskiwanie polskich liter w plikach .cls
+
+literate={ą}{{\k{a}}}1
 {Ą}{{\k{A}}}1
 {ę}{{\k{e}}}1
 {Ę}{{\k{E}}}1
