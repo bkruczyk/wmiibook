@@ -10,7 +10,7 @@ Klasa _wmiibook_ dostosowuje wygląd dokumentu Latex dla prac dyplomowych [WMiI]
 * standardowe streszczenie zostało rozszerzone o streszczenie i tytuł w języku angielskim
 * zmieniony został standardowy wygląd listingów
 
-Przykładowa praca z użyciem klasy _wmiibook_ wygląda [**tak**](https://github.com/mour/wmiibook/raw/master/thesis.pdf), natomiast listingi wyglądają [**tak**](https://github.com/mour/wmiibook/raw/master/listings.pdf).
+Przykładowa praca z użyciem klasy _wmiibook_ wygląda [tak](https://github.com/mour/wmiibook/raw/master/thesis.pdf), natomiast listingi wyglądają [tak](https://github.com/mour/wmiibook/raw/master/listings.pdf).
 
 ### Jak używać?
 Przede wszystkim należy wypakować pliki _wmiibook.cls_ oraz _listingsset.tex_ do katalogu z naszą pracą.

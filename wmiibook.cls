@@ -17,7 +17,7 @@
 \advance\textwidth-55mm
 
 % lewy margines
-\oddsidemargin-1in %reset 
+\oddsidemargin-1in %reset
 \advance\oddsidemargin 30mm
 
 % lewy margines stron parzystych w druku dwustronnym
@@ -35,6 +35,7 @@
 % szerokość marginaliów
 \marginparwidth 15mm
 
+%% nowe polecenia
 \newcommand{\@wydzial}{nazwa wydzialu}
 \newcommand{\@kierunek}{nazwa kierunku}
 \newcommand{\@rodzajpracy}{licencjacka/magisterska/inzynierska}
@@ -57,16 +58,17 @@
 \renewcommand{\maketitle}{%
 
     \begin{titlepage}\begin{center}
-    
+
     \MakeUppercase{\LARGE Uniwersytet Warmi\'{n}sko-Mazurski}\\[0.5cm]
     \MakeUppercase{\LARGE w~Olsztynie}\\[0.5cm]
     \MakeUppercase{\Large \@wydzial}\\[1.0cm]
 
-    {\Large Kierunek: \@kierunek}\\[3.0cm]
+    {\Large Kierunek: \@kierunek}\\[2.25cm]
 
-    {\Large \@author}\\[2.0cm]
+    {\Large \@author}\\[2.25cm]
 
-    {\LARGE \bf \@title}\\[7.0cm]
+    {\LARGE \bf \@title}\\[1cm]
+    {\Large \bf \@tytulang}\\[5.0cm]
 
     \begin{flushright}\begin{minipage}
         {0.5\textwidth}
@@ -81,7 +83,7 @@
 
     {\@date}
     \end{center}\end{titlepage}
-    
+
     \cleardoublepage
 }%
 
@@ -96,26 +98,26 @@
 }%
 {%
     \vspace*{26pt}
-    
+
     \begin{center}
         \bfseries\large Tytu{\l} pracy w j{\k{e}}zyku angielskim
     \end{center}
-    
+
     \@tytulang
-    
+
     \vspace*{26pt}
-    
+
     \begin{center}
         \bfseries\large Abstract
     \end{center}
 
     \@abstracteng
-    
+
     \nobreak\vfil\null
     \endtitlepage
-    
+
     \cleardoublepage
-    
+
     \newpage
     \thispagestyle{empty}
     \mbox{}
