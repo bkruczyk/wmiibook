@@ -57,68 +57,69 @@
 % strona tytułowa
 \renewcommand{\maketitle}{%
 
-    \begin{titlepage}\begin{center}
+  \begin{titlepage}
+    \let\footnotesize\small
+    \let\footnoterule\relax
+    \let \footnote \thanks
+    \begin{center}%
+      {\LARGE\textbf{Uniwersytet Warmi\'{n}sko-Mazurski}\\
+        \@wydzial\par}
+      \vspace{1cm plus 1fill}
+      {\Large\bf\@author\par}
+        \vspace{8mm plus .1fill}
+      {\Huge\textbf{\@title}\par}
+      \vspace{8mm plus .1fill}
+      {\large\bf Praca \@rodzajpracy\\[3pt]
+       na kierunku \MakeUppercase{\@kierunek}}
+      \vspace{2cm plus 1.5fill}
+      \begin{flushright}\large
+      \begin{tabular}{l}
+      Praca wykonana pod kierunkiem\\
+      \bfseries{\@opiekun}\\
+      \@katedra
+      \end{tabular}
+      \end{flushright}
+      \vspace{1cm plus 1fill}
+      {\large \@date\par}
+    \end{center}
+    \@thanks
+  \end{titlepage}
 
-    \MakeUppercase{\LARGE Uniwersytet Warmi\'{n}sko-Mazurski}\\[0.5cm]
-    \MakeUppercase{\LARGE w~Olsztynie}\\[0.5cm]
-    \MakeUppercase{\Large \@wydzial}\\[1.0cm]
-
-    {\Large Kierunek: \@kierunek}\\[2.25cm]
-
-    {\Large \@author}\\[2.25cm]
-
-    {\LARGE \bf \@title}\\[1cm]
-    {\Large \bf \@tytulang}\\[5.0cm]
-
-    \begin{flushright}\begin{minipage}
-        {0.5\textwidth}
-        Praca \@rodzajpracy\\
-        wykonana\\
-        \mbox{w \@katedra}\\
-        pod kierunkiem\\
-        \mbox{\emph{\@opiekun}}
-    \end{minipage}\end{flushright}
-
-    \vfill
-
-    {\@date}
-    \end{center}\end{titlepage}
-
-    \cleardoublepage
+  \cleardoublepage
 }%
 
 % streszczenie + tytul ang. + streszczenie ang.
 \renewenvironment{abstract}{%
-    \titlepage
-    \null\nobreak\vfil
+  \titlepage
+  \null\nobreak\vfil
 
-    \begin{center}
-        \bfseries\large \abstractname
-    \end{center}
+  \begin{center}
+    \bfseries\large \abstractname
+  \end{center}
 }%
 {%
-    \vspace*{26pt}
+  \vspace*{26pt}
 
-    \begin{center}
-        \bfseries\large Tytu{\l} pracy w j{\k{e}}zyku angielskim
-    \end{center}
+  \begin{center}
+    \bfseries\large Tytu{\l} pracy w j{\k{e}}zyku angielskim
+  \end{center}
 
-    \@tytulang
+  \@tytulang
 
-    \vspace*{26pt}
+  \vspace*{26pt}
 
-    \begin{center}
-        \bfseries\large Abstract
-    \end{center}
+  \begin{center}
+    \bfseries\large Abstract
+  \end{center}
 
-    \@abstracteng
+  \@abstracteng
 
-    \nobreak\vfil\null
-    \endtitlepage
+  \nobreak\vfil\null
+  \endtitlepage
 
-    \cleardoublepage
+  \cleardoublepage
 
-    \newpage
-    \thispagestyle{empty}
-    \mbox{}
+  \newpage
+  \thispagestyle{empty}
+  \mbox{}
 }%
