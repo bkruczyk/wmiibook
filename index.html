@@ -39,58 +39,85 @@
         <ul></ul>
       </nav>
       <section>
-        <h3>
-<a name="co-daje-uycie-klasy-wmiibook" class="anchor" href="#co-daje-uycie-klasy-wmiibook"><span class="octicon octicon-link"></span></a>Co daje użycie klasy <em>wmiibook</em>?</h3>
+        <h2>
+<a name="wmiibook" class="anchor" href="#wmiibook"><span class="octicon octicon-link"></span></a>wmiibook</h2>
 
-<p>Klasa <em>wmiibook</em> dostosowuje wygląd dokumentu Latex dla prac dyplomowych <a href="http://wmii.uwm.edu.pl/">WMiI</a>. W dokumencie obowiązuje (tak samo jak w standardowych klasach <em>book</em> i <em>report</em>) podział na rozdziały i sekcje. Dodatkowo:</p>
-
-<ul>
-<li>dodana została odpowiednio sformatowana strona tytułowa</li>
-<li>standardowe streszczenie zostało rozszerzone o streszczenie i tytuł w języku angielskim</li>
-<li>zmieniony został standardowy wygląd listingów</li>
-</ul><p>Przykładowa praca z użyciem klasy <em>wmiibook</em> wygląda <a href="https://github.com/bkruczyk/wmiibook/raw/master/thesis.pdf">tak</a>, natomiast listingi wyglądają <a href="https://github.com/bkruczyk/wmiibook/raw/master/listings.pdf">tak</a>.</p>
+<p>Klasa Latexa dla prac dyplomowych na Wydziale Matematyki i Informatyki
+Uniwersytetu Warmińsko-Mazurskiego w Olsztynie</p>
 
 <h3>
-<a name="jak-uywa" class="anchor" href="#jak-uywa"><span class="octicon octicon-link"></span></a>Jak używać?</h3>
+<a name="co-daje-u%C5%BCycie-klasy-wmiibook" class="anchor" href="#co-daje-u%C5%BCycie-klasy-wmiibook"><span class="octicon octicon-link"></span></a>Co daje użycie klasy <em>wmiibook</em>?</h3>
 
-<p>Przede wszystkim należy wypakować pliki <em>wmiibook.cls</em> oraz <em>listingsset.tex</em> do katalogu z naszą pracą.</p>
+<p>Klasa <em>wmiibook</em> dostosowuje wygląd dokumentu Latex dla prac
+dyplomowych <a href="http://wmii.uwm.edu.pl/">WMiI</a>. W dokumencie obowiązuje
+(tak samo jak w standardowych klasach <em>book</em> i <em>report</em>) podział na
+rozdziały i sekcje. Dodatkowo:</p>
+
+<ul>
+<li>dodana została odpowiednio sformatowana strona tytułowa standardowe</li>
+<li>streszczenie zostało rozszerzone o streszczenie i tytuł w języku angielskim</li>
+<li>zmieniony został standardowy wygląd listingów</li>
+</ul><p>Przykładowa praca z użyciem klasy <em>wmiibook</em> wygląda
+<a href="http://bkruczyk.github.io/wmiibook/pdf/thesis.pdf">tak</a>,
+natomiast listingi wyglądają
+<a href="http://bkruczyk.github.io/wmiibook/pdf/listings.pdf">tak</a>.</p>
+
+<h3>
+<a name="jak-u%C5%BCywa%C4%87" class="anchor" href="#jak-u%C5%BCywa%C4%87"><span class="octicon octicon-link"></span></a>Jak używać?</h3>
+
+<p>Przede wszystkim należy wypakować pliki <em>wmiibook.cls</em> oraz
+<em>listingsset.tex</em> do katalogu z naszą pracą.</p>
 
 <p>Przekazujemy klasę <em>wmiibook</em> do polecenia <em>\documentclass{}</em>:</p>
 
 <div class="highlight"><pre><span class="k">\documentclass</span><span class="nb">{</span>wmiibook<span class="nb">}</span>
 </pre></div>
 
-<p><em>wmiibook</em> bazuje na klasie <em>report</em>, więc dozwolone jest przekazywanie opcji zgodnych z klasą <em>report</em>, np.:</p>
+<p><em>wmiibook</em> bazuje na klasie <em>report</em>, więc dozwolone jest
+przekazywanie opcji zgodnych z klasą <em>report</em>, np.:</p>
 
 <div class="highlight"><pre><span class="c">% wielkość czcionki 12pt, druk dwustronny</span>
 <span class="k">\documentclass</span><span class="na">[12pt, twoside]</span><span class="nb">{</span>wmiibook<span class="nb">}</span>
 </pre></div>
 
-<p>Aby wykorzystać zmodyfikowany wygląd listingów wystarczy dołączyć plik <a href="https://github.com/bkruczyk/wmiibook/blob/master/listingsset.tex">listingsset.tex</a> w preambule dokumentu głównego poleceniem:</p>
+<p>Aby wykorzystać zmodyfikowany wygląd listingów wystarczy dołączyć plik
+<a href="https://github.com/bkruczyk/wmiibook/blob/master/listingsset.tex">listingsset.tex</a>
+w preambule dokumentu głównego poleceniem:</p>
 
 <div class="highlight"><pre><span class="k">\input</span><span class="nb">{</span>listingsset<span class="nb">}</span>
 </pre></div>
 
 <h3>
-<a name="wicej-informacji" class="anchor" href="#wicej-informacji"><span class="octicon octicon-link"></span></a>Więcej informacji</h3>
+<a name="wi%C4%99cej-informacji" class="anchor" href="#wi%C4%99cej-informacji"><span class="octicon octicon-link"></span></a>Więcej informacji</h3>
 
-<p>Wykorzystanie w praktyce klasy <em>wmiibook</em> przedstawia plik <a href="https://github.com/bkruczyk/wmiibook/blob/master/thesis.tex">thesis.tex</a>, natomiast użycie listingów <a href="https://github.com/bkruczyk/wmiibook/blob/master/listings.tex">listings.tex</a>.</p>
+<p>Wykorzystanie w praktyce klasy <em>wmiibook</em> przedstawia plik
+<a href="https://github.com/bkruczyk/wmiibook/blob/master/thesis.tex">thesis.tex</a>,
+natomiast użycie listingów
+<a href="https://github.com/bkruczyk/wmiibook/blob/master/listings.tex">listings.tex</a>.</p>
 
 <h3>
 <a name="uwaga" class="anchor" href="#uwaga"><span class="octicon octicon-link"></span></a>Uwaga!</h3>
 
-<p>Praca <em>Implementacja blabalizatora różnicowego z wykorzystaniem teorii fetorów σ-ρ</em>, która stanowi zawartość merytoryczną pliku <a href="https://github.com/bkruczyk/wmiibook/blob/master/thesis.tex">thesis.tex</a>, jest własnością <a href="http://www.mimuw.edu.pl/%7Ewolinski/">Marcina Wolińskiego</a>. Służy ona jako przykładowy tekst dla prac magisterskich na wydziale MIM UW. Przeze mnie zostało przygotowane jedynie streszczenie angielskie .</p>
+<p>Praca <em>Implementacja blabalizatora różnicowego z wykorzystaniem teorii
+fetorów σ-ρ</em>, która stanowi zawartość merytoryczną pliku
+<a href="https://github.com/bkruczyk/wmiibook/blob/master/thesis.tex">thesis.tex</a>,
+jest własnością <a href="http://www.mimuw.edu.pl/%7Ewolinski/">Marcina
+Wolińskiego</a>. Służy ona jako
+przykładowy tekst dla prac magisterskich na wydziale MIM UW. Przeze
+mnie zostało przygotowane jedynie streszczenie angielskie.</p>
 
-<p>Oryginał znajduje się pod tym <a href="http://www.mimuw.edu.pl/studia/dyplomy/wzor-pracy/">adresem</a>.</p>
+<p>Oryginał znajduje się pod tym
+<a href="http://www.mimuw.edu.pl/studia/dyplomy/wzor-pracy/">adresem</a>.</p>
 
 <h3>
 <a name="kontakt" class="anchor" href="#kontakt"><span class="octicon octicon-link"></span></a>Kontakt</h3>
 
-<p>W razie pytań lub sugestii co do klasy <em>wmiibook</em>, napisz: <a href="mailto:bartlomiej.kruczyk@gmail.com">bartlomiej.kruczyk@gmail.com</a></p>
+<p>W razie pytań lub sugestii co do klasy <em>wmiibook</em>, napisz:
+<a href="mailto:bartlomiej.kruczyk@gmail.com">bartlomiej.kruczyk@gmail.com</a></p>
       </section>
       <footer>
         <p>Project maintained by <a href="https://github.com/bkruczyk">bkruczyk</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
