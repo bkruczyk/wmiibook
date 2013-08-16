@@ -15,9 +15,9 @@ rozdziały i sekcje. Dodatkowo:
 * zmieniony został standardowy wygląd listingów
 
 Przykładowa praca z użyciem klasy _wmiibook_ wygląda
-[tak](https://github.com/bkruczyk/wmiibook/raw/master/thesis.pdf),
+[tak](http://bkruczyk.github.io/wmiibook/pdf/thesis.pdf),
 natomiast listingi wyglądają
-[tak](https://github.com/bkruczyk/wmiibook/raw/master/listings.pdf).
+[tak](http://bkruczyk.github.io/wmiibook/pdf/listings.pdf).
 
 ### Jak używać?
 Przede wszystkim należy wypakować pliki _wmiibook.cls_ oraz
