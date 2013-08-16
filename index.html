@@ -3,45 +3,55 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>wmiibook by mour</title>
-
+    <title>wmiibook by bkruczyk</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <meta name="description" content="Klasa Latexa dla prac dyplomowych na Wydziale Matematyki i Informatyki Uniwersytetu Warmińsko-Mazurskiego w Olsztynie" />
-    <meta name="keywords" content="Latex, klasa, praca dyplomowa, WMiI, UWM" />
   </head>
   <body>
-    <div class="wrapper">
+
       <header>
         <h1>wmiibook</h1>
         <p>Klasa Latexa dla prac dyplomowych na Wydziale Matematyki i Informatyki Uniwersytetu Warmińsko-Mazurskiego w Olsztynie</p>
-
-        <p class="view"><a href="https://github.com/mour/wmiibook">View the Project on GitHub <small>mour/wmiibook</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/mour/wmiibook/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/mour/wmiibook/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/mour/wmiibook">View On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/bkruczyk/wmiibook" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/bkruczyk/wmiibook/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/bkruczyk/wmiibook/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
       <section>
-        <h3>Co daje użycie klasy <em>wmiibook</em>?</h3>
+        <h3>
+<a name="co-daje-uycie-klasy-wmiibook" class="anchor" href="#co-daje-uycie-klasy-wmiibook"><span class="octicon octicon-link"></span></a>Co daje użycie klasy <em>wmiibook</em>?</h3>
 
 <p>Klasa <em>wmiibook</em> dostosowuje wygląd dokumentu Latex dla prac dyplomowych <a href="http://wmii.uwm.edu.pl/">WMiI</a>. W dokumencie obowiązuje (tak samo jak w standardowych klasach <em>book</em> i <em>report</em>) podział na rozdziały i sekcje. Dodatkowo:</p>
 
 <ul>
-<li>dodana została odpowiednio sformatowana strona tytułowa (zgodnie ze wzorem zamieszczonym <a href="http://wmii.uwm.edu.pl/index.php?content=pozostale">tutaj</a>)</li>
+<li>dodana została odpowiednio sformatowana strona tytułowa</li>
 <li>standardowe streszczenie zostało rozszerzone o streszczenie i tytuł w języku angielskim</li>
 <li>zmieniony został standardowy wygląd listingów</li>
-</ul><p>Przykładowa praca z użyciem klasy <em>wmiibook</em> wygląda <a href="https://github.com/mour/wmiibook/raw/master/thesis.pdf"><em>tak</em></a>, natomiast listingi wyglądają <a href="https://github.com/mour/wmiibook/raw/master/listings.pdf"><em>tak</em></a>.</p>
+</ul><p>Przykładowa praca z użyciem klasy <em>wmiibook</em> wygląda <a href="https://github.com/bkruczyk/wmiibook/raw/master/thesis.pdf">tak</a>, natomiast listingi wyglądają <a href="https://github.com/bkruczyk/wmiibook/raw/master/listings.pdf">tak</a>.</p>
 
-<h3>Jak używać?</h3>
+<h3>
+<a name="jak-uywa" class="anchor" href="#jak-uywa"><span class="octicon octicon-link"></span></a>Jak używać?</h3>
 
 <p>Przede wszystkim należy wypakować pliki <em>wmiibook.cls</em> oraz <em>listingsset.tex</em> do katalogu z naszą pracą.</p>
 
@@ -56,31 +66,34 @@
 <span class="k">\documentclass</span><span class="na">[12pt, twoside]</span><span class="nb">{</span>wmiibook<span class="nb">}</span>
 </pre></div>
 
-<p>Aby wykorzystać zmodyfikowany wygląd listingów wystarczy dołączyć plik <a href="https://github.com/mour/wmiibook/blob/master/listingsset.tex">listingsset.tex</a> w preambule dokumentu głównego poleceniem:</p>
+<p>Aby wykorzystać zmodyfikowany wygląd listingów wystarczy dołączyć plik <a href="https://github.com/bkruczyk/wmiibook/blob/master/listingsset.tex">listingsset.tex</a> w preambule dokumentu głównego poleceniem:</p>
 
 <div class="highlight"><pre><span class="k">\input</span><span class="nb">{</span>listingsset<span class="nb">}</span>
 </pre></div>
 
-<h3>Więcej informacji</h3>
+<h3>
+<a name="wicej-informacji" class="anchor" href="#wicej-informacji"><span class="octicon octicon-link"></span></a>Więcej informacji</h3>
 
-<p>Wykorzystanie w praktyce klasy <em>wmiibook</em> przedstawia plik <a href="https://github.com/mour/wmiibook/blob/master/thesis.tex">thesis.tex</a>, natomiast użycie listingów <a href="https://github.com/mour/wmiibook/blob/master/listings.tex">listings.tex</a>.</p>
+<p>Wykorzystanie w praktyce klasy <em>wmiibook</em> przedstawia plik <a href="https://github.com/bkruczyk/wmiibook/blob/master/thesis.tex">thesis.tex</a>, natomiast użycie listingów <a href="https://github.com/bkruczyk/wmiibook/blob/master/listings.tex">listings.tex</a>.</p>
 
-<h3>Uwaga!</h3>
+<h3>
+<a name="uwaga" class="anchor" href="#uwaga"><span class="octicon octicon-link"></span></a>Uwaga!</h3>
 
-<p>Praca <em>Implementacja blabalizatora różnicowego z wykorzystaniem teorii fetorów σ-ρ</em>, która stanowi zawartość merytoryczną pliku <a href="https://github.com/mour/wmiibook/blob/master/thesis.tex">thesis.tex</a>, jest własnością <a href="http://www.mimuw.edu.pl/%7Ewolinski/">Marcina Wolińskiego</a>. Służy ona jako przykładowy tekst dla prac magisterskich na wydziale MIM UW. Przeze mnie zostało przygotowane jedynie streszczenie angielskie .</p>
+<p>Praca <em>Implementacja blabalizatora różnicowego z wykorzystaniem teorii fetorów σ-ρ</em>, która stanowi zawartość merytoryczną pliku <a href="https://github.com/bkruczyk/wmiibook/blob/master/thesis.tex">thesis.tex</a>, jest własnością <a href="http://www.mimuw.edu.pl/%7Ewolinski/">Marcina Wolińskiego</a>. Służy ona jako przykładowy tekst dla prac magisterskich na wydziale MIM UW. Przeze mnie zostało przygotowane jedynie streszczenie angielskie .</p>
 
 <p>Oryginał znajduje się pod tym <a href="http://www.mimuw.edu.pl/studia/dyplomy/wzor-pracy/">adresem</a>.</p>
 
-<h3>Kontakt</h3>
+<h3>
+<a name="kontakt" class="anchor" href="#kontakt"><span class="octicon octicon-link"></span></a>Kontakt</h3>
 
 <p>W razie pytań lub sugestii co do klasy <em>wmiibook</em>, napisz: <a href="mailto:bartlomiej.kruczyk@gmail.com">bartlomiej.kruczyk@gmail.com</a></p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/mour">mour</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p>Project maintained by <a href="https://github.com/bkruczyk">bkruczyk</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
